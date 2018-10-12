@@ -2,9 +2,223 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Кто же я</title>
+
+    <title>Резюме</title>
+    <style>
+        html{
+            background-image: url("img.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+
+
+
+        }
+        body{
+            height:100%;
+            width:100%;
+            margin:0;
+            padding:0;
+            font-size: xx-large;
+            font-family: "Comic Sans MS";
+
+
+        }
+        .main{
+            height:100%;
+            width:100%;
+            margin:0;
+            padding:0;
+            background-color: ghostwhite;
+        }
+        ol{
+            horiz-align: center;
+        }
+        .head{
+            align-items: inherit;
+        }
+        footer{
+            font-size: medium;
+            padding-top: 10px;
+            color: ivory;
+            height: inherit;
+            width:100%;
+            margin:0;
+            background-color: #232323;
+        }
+        section{
+            display: flex;
+            height:100%;
+            width:100%;
+
+
+        }
+        .bottable{
+            border-top: 8px solid red;
+            background-color: lightgrey;
+            background:rgba(0,0,0, .6);
+            alignment: center;
+            color: ivory;
+            width: 33%;
+            margin: 5px;
+            padding: 10px;
+        }
+        .superHeader{
+            display: flex;
+            height:100%;
+            width:100%;
+            align-items: inherit;
+            alignment: center;
+            align-content: inherit;
+
+
+        }
+        .header1{
+            width:100%;
+            position:fixed;
+            top:0px;
+            background-color: #232323;
+        }
+
+        .name{
+            margin: 5px;
+            padding: 5px;
+            alignment: center;
+            color: ivory;
+            width: 50%;
+            font-size: medium;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        #button{
+            alignment: center;
+            align-content: center;
+            list-style-type: none;
+            display: inline-block;
+            padding-left: 4%;
+            padding-right: 4%;
+            margin-top: auto;
+            margin-bottom: auto;
+
+
+        }
+
+        A:link {
+            color: ivory;
+            text-decoration: none;
+        }
+        A:visited { text-decoration: none; color: ivory;}
+        A:active { text-decoration: #5f5f5f; }
+        A:hover {
+            text-decoration: none;
+            color: darkgrey ;
+        }
+
+        .afterheader{
+            color: ivory;
+            height:100vh;
+            align-items: center;
+        }
+
+        #image{
+            height: 100%;
+            width: auto;
+            float: left;
+        }
+
+        .inafter{
+            border-left: 8px solid red;
+            background-color: lightgrey;
+            background:rgba(0,0,0, .6);
+            margin-left: 20px;
+            margin-right: 10px;
+            alignment: left;
+            width: 50%;
+            height: 50%;
+        }
+
+
+
+    </style>
 </head>
 <body>
+<header id="top">
+    <div class="header1">
+    <div class="superHeader">
+        <div class="name">
+        <h3>Рачкован Євгеній</h3>
+        </div>
+        <ul  class="name" style="text-align: left;">
+            <li id="button"><a href="#top">Хто я</a></li>
+            <li id="button"><a href="#afterheader">Що я знаю</a></li>
+            <li id="button"><a href="#about">Детальніше</a></li>
+            <li id="button"><a href="#foot">Контакти</a></li>
+        </ul>
+    </div>
+    </div>
+</header>
+<section class="afterheader">
+    <div class="inafter">
+        <img id="image" src="I_am.jpg" alt="My image" />
+        <h3 align="Center">Рачкован Євгеній Олегович</h3>
+        <p align="Center">Рік народження: 2001</p>
+    </div>
+    <div  class="inafter">
+        <p  align="center"><em><span style="font-size: 40px">&ldquo;</span> Any fool can write code that a computer can understand. Good programmers write code that humans can understand. <span style="font-size: 40px">&rdquo;</span></em></p>
+        <p style="text-align: end;" align="left"><br>― Martin Fowler</p>
+    </div>
+</section>
+<section class="head" id="afterheader">
+    <div class="bottable">
+        <h2>Знання Python:</h2>
+        <ul>
+            <li>Основи Python</li>
+            <li>Графічний дизайн на Tkinter</li>
+            <li>Веб розробка на Django</li>
+        </ul>
+    </div>
+    <div class="bottable">
+        <h2>Знання C#:</h2>
+        <ul>
+            <li>Основи C#</li>
+            <li>Створення додатків під універсальну платформу Windows на WPF</li>
+            <li>Створення кросплатформенних додатків на Xamarin Forms</li>
+            <li>Основи створення ігор на Unity</li>
+        </ul>
+    </div>
+    <div class="bottable">
+        <h2 >Знання frontend:</h2>
+        <ul>
+            <li>Основи HTML</li>
+            <li>Основи JS</li>
+            <li>Основи CSS</li>
+        </ul>
+    </div>
+</section>
+<section class="main" id="about">
+<div>
+    <h3>Дані про освіту:</h3>
+    <ul>
+        <li><b>Навчання в ЧДБК</b></li>
+        <li>Школа</li>
+        <li>Садік</li>
+    </ul>
+</div>
+<div>
+    <h3>Інформація про досвід роботи:</h3>
+    <ul>
+        <p>Працюю в компанії Jooble, маппером</p>
+    </ul>
+</div>
 
+</section>
+<footer id="foot">
+    <p style="padding-left: 30px;">Можете знайти мене за адресом: вул. Чехова 3 кв.18</p>
+    <p style="padding-left: 30px;">Або зателефонувати за номером: 050520520(Не мій)</p>
+</footer>
 </body>
 </html>
