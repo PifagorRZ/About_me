@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>About Me</title>
+    <style>
+        html{
+            background-image: url("img.jpg");
+            box-shadow: inset 0 0 0 1000px rgba(255,255,255,.5);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+        }
+        body{
+            height:100%;
+            width:100%;
+            margin:0;
+            padding:0;
+            font-size: xx-large;
+            font-family: 'Lato', sans-serif;
+        }
+        .head{
+            align-items: inherit;
+        }
+        footer{
+            font-size: medium;
+            padding-top: 10px;
+            color: ivory;
+            height: inherit;
+            width:100%;
+            margin:0;
+            background-color: #232323;
+        }
+        section{
+            display: flex;
+            height:100%;
+            width:100%;
+        }
+        .bottable{
+            border-top: 10px solid FireBrick;
+            background-color: lightgrey;
+            background:rgba(0,0,0, .6);
+            color: ivory;
+            width: 33%;
+            margin: 5px;
+            padding: 10px;
+        }
+        .superHeader{
+            display: flex;
+            height:100%;
+            width:100%;
+            align-items: inherit;
+            align-content: inherit;
+
+
+        }
+        .header1{
+            width:100%;
+            position:fixed;
+            top:0px;
+            background-color: #232323;
+        }
+
+        .name{
+            margin: 5px;
+            padding: 5px;
+            color: ivory;
+            width: 50%;
+            font-size: medium;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .button{
+            align-content: center;
+            list-style-type: none;
+            display: inline-block;
+            padding-left: 4%;
+            padding-right: 4%;
+            margin-top: auto;
+            margin-bottom: auto;
+
+
+        }
+
+        A:link {
+            color: ivory;
+            text-decoration: none;
+        }
+        A:visited { text-decoration: none; color: ivory;}
+        A:active { text-decoration: #5f5f5f; }
+        A:hover {
+            text-decoration: none;
+            color: darkgrey ;
+        }
+
+        .afterheader{
+            color: ivory;
+            height:100vh;
+            align-items: center;
+        }
+
+        #image{
+            height: 100%;
+            width: auto;
+            float: left;
+        }
+
+        .inafter{
+            border-left: 10px solid FireBrick;
+            background-color: lightgrey;
+            background:rgba(0,0,0, .6);
+            margin-left: 20px;
+            margin-right: 10px;
+            width: 50%;
+            height: 50%;
+            display: table;
+        }
+
+        .main{
+            height:100%;
+            width:100%;
+            margin:0;
+            padding:0;
+            background-color: ghostwhite;
+        }
+
+        .about{
+            margin: 50px;
+        }
+
+        .wereIam{
+            padding-left: 30px;
+        }
+
+        #text{
+            border-top: 10px solid FireBrick;
+        }
+        #rightText{
+            line-height: 50px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        #sharp{
+            font-size: 40px;
+        }
+        #author{
+            text-align: end;
+            display: table-footer-group;
+            vertical-align: bottom;
+        }
+        #alignT{
+            text-align: left;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<header id="top">
+    <div class="header1">
+        <div class="superHeader">
+            <div class="name">
+                <h3>Рачкован Євгеній</h3>
+            </div>
+            <ul  class="name" id="alignT">
+                <li class="button"><a href="#top">Хто я</a></li>
+                <li class="button"><a href="#afterheader">Що я знаю</a></li>
+                <li class="button"><a href="#about">Детальніше</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<section class="afterheader">
+    <div class="inafter">
+        <img id="image" src="I_am2.jpg" alt="My image" />
+        <h3 align="Center">Рачкован Євгеній Олегович</h3>
+        <p align="Center">Рік народження: 2001</p>
+        <p align="Center">Кількість хромосом: 46</p>
+    </div>
+    <div style=" padding: 30px;"  class="inafter">
+        <p align="center" id="rightText"><em><span id="sharp">&ldquo;</span> Any fool can write code that a computer can understand. Good programmers write code that humans can understand. <span style="font-size: 40px">&rdquo;</span></em></p>
+        <p id="author" align="left"><br>― Martin Fowler</p>
+    </div>
+</section>
+<section class="head" id="afterheader">
+    <div class="bottable">
+        <h2>Знання Python:</h2>
+        <ul>
+            <li>Основи Python</li>
+            <li>Графічний дизайн на Tkinter</li>
+            <li>Веб розробка на Django</li>
+        </ul>
+    </div>
+    <div class="bottable">
+        <h2>Знання C#:</h2>
+        <ul>
+            <li>Основи C#</li>
+            <li>Створення додатків під універсальну платформу Windows на WPF</li>
+            <li>Створення кросплатформенних додатків на Xamarin Forms</li>
+            <li>Основи створення ігор на Unity</li>
+        </ul>
+    </div>
+    <div class="bottable">
+        <h2 >Знання frontend:</h2>
+        <ul>
+            <li>Основи HTML</li>
+            <li>Основи JS</li>
+            <li>Основи CSS</li>
+        </ul>
+    </div>
+</section>
+<section class="main" id="about">
+    <div class="about">
+        <h2 align="center" >Детальніше про мене</h2>
+        <p align="center" id="text">Народжений в селі Рацево, що на Черкащині, я любив математику і цікавився комп'ютером.
+            Тому в один прекрасний день я сказав: &ldquo;Ок гугл, я люблю математику і працювати за комп'ютером, яка професія мені підходить&ldquo;.
+            Я думаю відповідь була очевидною... Зараз я студент 3 курсу ,Черкаського державного бізнес колледжу, по спеціальності Інженерія програмного забезпечення
+            працюю в компанії Jooble меппером і паралельно додатково відвідую декілька курсів по програмуванню.
+            Раніше я витрачав майже весь час на комп'ютерні ігри і дуже про це жалкую. І якщо перевести весь час який я марнував граючи в ігри
+            в гроші, які я міг заробити працюючи меппером (зп доволі скромна 22 грн час, але є і плюси, вільний графік і можливість
+            працювати лише 4 години на день) у мене вийде доволі крупна сума, приблизно 130 000 грн. а може і більше.
+            Але окрім роботи, весь цей час я міг вивчати програмування і зараз бути справжнім, крутив хацкером, яким я і намагаюсь стати.</p>
+    </div>
+</section>
+<footer id="foot">
+    <p class="wereIam">Можете знайти мене за адресом: вул. Чехова 3 кв.18</p>
+    <p class="wereIam">Або зателефонувати за номером: 050520520(Не мій)</p>
+</footer>
+</body>
+</html>
