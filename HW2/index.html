@@ -4,136 +4,114 @@
     <meta charset="UTF-8">
     <title>Forms</title>
     <style>
-        .button{
-            float:right;
+        .button {
+            float: right;
             margin: 20px;
             padding: 8px;
         }
-        .main{
+
+        .main {
             width: 40%;
         }
-        .forms{
+
+        .field {
             display: flex;
 
             margin: 10px;
         }
-        #id{
+
+        #identification {
             background-color: darkgrey;
         }
-        .right{
+
+        .right {
         }
-        .left{
+
+        .left {
             width: 100px;
         }
-        #text{
+
+        #text {
             padding-right: 30px;
         }
-        img{
+
+        img {
             padding-right: 5px;
             padding-left: 5px;
         }
-        .superRight{
+
+        .superRight {
             padding-left: 20px;
         }
-        menu{
+
+        menu {
             padding-left: 100px;
         }
-        input[type="range"]{
+
+        input[type="range"] {
             width: 522px;
         }
-        select{
+
+        select {
             width: 522px;
         }
     </style>
 </head>
 <body>
-    <div class="main">
-        <h1 align="Center">Profile edit page</h1>
-        <fieldset class="field"><legend>Basic info</legend>
+<form class="main" action="https://postman-echo.com/post" method="post">
+    <h1 align="Center">Profile edit page</h1>
+    <fieldset>
+        <legend>Basic info</legend>
+        <div class="field">
+            <label class="left">ID</label><input id="identification" class="right" size="70%" type="text" name="ID"><br>
+        </div>
+        <label class="left">First name</label><input class="right" size="70%" type="text" name="firstname"><br>
+        <label class="left">Last name</label><input class="right" size="70%" type="text" name="lastname"><br>
+        <label class="left">Password</label><input class="right" size="70%" type="password" name="password"><br>
+        <label class="left">Phone</label><input class="right" size="70%" type="tel" placeholder="380" name="number"><br>
+        <label class="left">Email</label><input class="right" size="70%" type="email" placeholder="someemail@gmail.com" name="email"><br>
+        <label class="left"></label><input class="right" size="70%" type="checkbox" name="check"> Keep my email address
+        a private<br>
+        <label id="text" class="left"></label><label>We'll remove your public profile email and use 1978331+
+        username@users noreply localhost</label><br>
+        <label class="left">DOB</label><input class="right" size="70" type="date" name="DOB">
+        <img src="cal.jpg" width="20px" height="20px"><br>
+        <label class="left">Blog url</label><input class="right" size="70%" type="url" placeholder="http//" name="blogurl"><br>
+        <label class="left">About me</label><textarea name="message" rows="10" cols="71"></textarea><br>
+        <label class="left">Profile picture</label><input class="right" size="70%" type="file" name="picture"><br>
+    </fieldset>
 
-            <form class="forms">
-                <label class="left">ID</label><input id="id" class="right" size="70%" type="text" name="ID"><br>
-            </form>
-            <form class="forms">
-                <label class="left">First name</label><input class="right" size="70%" type="text" name="firstname"><br>
-            </form>
-            <form class="forms">
-                <label class="left">Last name</label><input class="right" size="70%" type="text" name="lastname"><br>
-            </form>
-            <form class="forms">
-                <label class="left">Password</label><input class="right" size="70%" type="password" name="password"><br>
-            </form>
-            <form class="forms">
-                <label class="left">Phone</label><input class="right" size="70%" type="tel" placeholder="380" name="number"><br>
-            </form>
-            <form class="forms">
-                <label class="left">Email</label><input class="right" size="70%" type="email" placeholder="someemail@gmail.com" name="email"><br>
-            </form>
-            <form class="forms">
-                <label class="left"></label><input class="right" size="70%" type="checkbox" name="check"> Keep my email address a private<br>
-            </form>
-            <form class="forms">
-                <label id="text" class="left"></label><label>We'll remove your public profile email and use 1978331+
-                username@users noreply localhost</label><br>
-            </form>
-            <form class="forms">
-                <label class="left">DOB</label><input class="right" size="70" type="date" name="DOB">
-                <img src="cal.jpg" width="20px" height="20px"><br>
-            </form>
-            <form class="forms">
-                <label class="left">Blog url</label><input class="right" size="70%" type="url" placeholder="http//" name="blogurl"><br>
-            </form>
-            <form class="forms">
-                <label class="left">About me</label><textarea name="message" rows="10" cols="71" ></textarea><br>
-            </form>
-            <form class="forms">
-                <label class="left">Profile picture</label><input class="right" size="70%" type="file"
-                                                                  name="picture"><br>
-            </form>
-        </fieldset>
-
-        <fieldset class="field"><legend>Professional info</legend>
-            <form class="forms">
-                <label class="left">Desire to study</label><input class="right" size="70%" type="range" name="range"><br>
-            </form>
-            <form class="forms">
-                <label class="left">Experience</label><input class="right" size="70%" type="number" name="exp">
-                <label class="superRight">years</label><br>
-            </form>
-            <form class="forms" >
-                <label>Development experience</label>
-            </form>
-            <menu>
-                <input class="right" size="70%" type="radio" name="range"> Learning to program<br>
-                <input class="right" size="70%" type="radio" name="range"> Junior Developer<br>
-                <input class="right" size="70%" type="radio" name="range"> Mid-Level Developer<br>
-                <input class="right" size="70%" type="radio" name="range"> Senior Developer<br>
-            </menu>
-            <form class="forms">
-                <label class="left">Country</label>
-                <select name="country" >
-                    <option value="" selected disabled hidden>- Choose Your Country -</option>
-                    <option value="ukraine">Ukraine</option>
-                    <option value="usa">USA</option>
-                    <option value="thailand">Thailand</option>
-                    <option value="spain">Spain</option>
-                </select><br>
-            </form>
-            <form class="forms">
-                <label class="left">Skills</label>
-            </form>
-                <menu>
-                <input class="right" size="70%" type="checkbox" name="skills"> HTML<br>
-                <input class="right" size="70%" type="checkbox" name="skills"> CSS<br>
-                <input class="right" size="70%" type="checkbox" name="skills"> JavaScript<br>
-                <input class="right" size="70%" type="checkbox" name="skills"> R<br>
-                <input class="right" size="70%" type="checkbox" name="skills"> Scala<br>
-                <input class="right" size="70%" type="checkbox" name="skills"> Haskel<br>
-                </menu>
-        </fieldset>
-        <input class="button" type="submit" value="Submit">
-        <label class="button" >< Cencel</label>
-        <input id="prodId" name="prodId" type="hidden" value="xm234jq">
-    </div>
+    <fieldset>
+        <legend>Professional info</legend>
+        <label class="left">Desire to study</label><input class="right" size="70%" type="range" name="desire-to-study"><br>
+        <label class="left">Experience</label><input class="right" size="70%" type="number" name="exp">
+        <label class="superRight">years</label><br>
+        <label>Development experience</label>
+        <menu>
+            <input class="right" size="70%" type="radio" name="range"> Learning to program<br>
+            <input class="right" size="70%" type="radio" name="range"> Junior Developer<br>
+            <input class="right" size="70%" type="radio" name="range"> Mid-Level Developer<br>
+            <input class="right" size="70%" type="radio" name="range"> Senior Developer<br>
+        </menu>
+        <label class="left">Country</label>
+        <select name="country">
+            <option value="" selected disabled hidden>- Choose Your Country -</option>
+            <option value="360">Ukraine</option>
+            <option value="1">USA</option>
+            <option value="66">Thailand</option>
+            <option value="34">Spain</option>
+        </select><br>
+        <label class="left">Skills</label><br>
+        <input class="right" size="70%" type="checkbox" name="html"> HTML<br>
+        <input class="right" size="70%" type="checkbox" name="css"> CSS<br>
+        <input class="right" size="70%" type="checkbox" name="js"> JavaScript<br>
+        <input class="right" size="70%" type="checkbox" name="r"> R<br>
+        <input class="right" size="70%" type="checkbox" name="scala"> Scala<br>
+        <input class="right" size="70%" type="checkbox" name="haskel"> Haskel<br>
+    </fieldset>
+    <input class="button" type="submit" value="Submit">
+    <input class="button" type="reset">
+    <input id="prodId" name="prodId" type="hidden" value="xm234jq">
+</form>
 </body>
 </html>
