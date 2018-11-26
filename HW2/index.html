@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <style>
+        .button {
+            float: right;
+            margin: 20px;
+            padding: 8px;
+        }
+
+        .main {
+            width: 40%;
+        }
+
+        .field {
+            display: flex;
+
+            margin: 10px;
+        }
+
+        #identification {
+            background-color: darkgrey;
+        }
+
+        .right {
+        }
+
+        .left {
+            width: 100px;
+        }
+
+        #text {
+            padding-right: 30px;
+        }
+
+        img {
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+
+        .superRight {
+            padding-left: 20px;
+        }
+
+        menu {
+            padding-left: 100px;
+        }
+
+        input[type="range"] {
+            width: 522px;
+        }
+
+        select {
+            width: 522px;
+        }
+    </style>
+</head>
+<body>
+<form class="main" action="https://postman-echo.com/post" method="post">
+    <h1 align="Center">Profile edit page</h1>
+    <fieldset>
+        <legend>Basic info</legend>
+        <div class="field">
+            <label class="left">ID</label><input id="identification" class="right" size="70%" type="text" name="ID"><br>
+        </div>
+        <label class="left">First name</label><input class="right" size="70%" type="text" name="firstname"><br>
+        <label class="left">Last name</label><input class="right" size="70%" type="text" name="lastname"><br>
+        <label class="left">Password</label><input class="right" size="70%" type="password" name="password"><br>
+        <label class="left">Phone</label><input class="right" size="70%" type="tel" placeholder="380" name="number"><br>
+        <label class="left">Email</label><input class="right" size="70%" type="email" placeholder="someemail@gmail.com" name="email"><br>
+        <label class="left"></label><input class="right" size="70%" type="checkbox" name="check"> Keep my email address
+        a private<br>
+        <label id="text" class="left"></label><label>We'll remove your public profile email and use 1978331+
+        username@users noreply localhost</label><br>
+        <label class="left">DOB</label><input class="right" size="70" type="date" name="DOB">
+        <img src="cal.jpg" width="20px" height="20px"><br>
+        <label class="left">Blog url</label><input class="right" size="70%" type="url" placeholder="http//" name="blogurl"><br>
+        <label class="left">About me</label><textarea name="message" rows="10" cols="71"></textarea><br>
+        <label class="left">Profile picture</label><input class="right" size="70%" type="file" name="picture"><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Professional info</legend>
+        <label class="left">Desire to study</label><input class="right" size="70%" type="range" name="desire-to-study"><br>
+        <label class="left">Experience</label><input class="right" size="70%" type="number" name="exp">
+        <label class="superRight">years</label><br>
+        <label>Development experience</label>
+        <menu>
+            <input class="right" size="70%" type="radio" name="range"> Learning to program<br>
+            <input class="right" size="70%" type="radio" name="range"> Junior Developer<br>
+            <input class="right" size="70%" type="radio" name="range"> Mid-Level Developer<br>
+            <input class="right" size="70%" type="radio" name="range"> Senior Developer<br>
+        </menu>
+        <label class="left">Country</label>
+        <select name="country">
+            <option value="" selected disabled hidden>- Choose Your Country -</option>
+            <option value="360">Ukraine</option>
+            <option value="1">USA</option>
+            <option value="66">Thailand</option>
+            <option value="34">Spain</option>
+        </select><br>
+        <label class="left">Skills</label><br>
+        <input class="right" size="70%" type="checkbox" name="html"> HTML<br>
+        <input class="right" size="70%" type="checkbox" name="css"> CSS<br>
+        <input class="right" size="70%" type="checkbox" name="js"> JavaScript<br>
+        <input class="right" size="70%" type="checkbox" name="r"> R<br>
+        <input class="right" size="70%" type="checkbox" name="scala"> Scala<br>
+        <input class="right" size="70%" type="checkbox" name="haskel"> Haskel<br>
+    </fieldset>
+    <input class="button" type="submit" value="Submit">
+    <input class="button" type="reset">
+    <input id="prodId" name="prodId" type="hidden" value="xm234jq">
+</form>
+</body>
+</html>
